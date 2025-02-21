@@ -22,12 +22,18 @@ Clone ce dépôt et lance le scanner avec :
 # Cloner le dépôt
 git clone https://github.com/ton-github/cybersec-scanner.git
 cd cybersec-scanner
+```
+
+Avant de lancer le service, vous devez définir la cible à scanner. Pour cela, modifiez la variable `TARGET_DOMAIN` dans le fichier `docker-compose.yml` :
+```yaml
+environment:
+  - TARGET_DOMAIN=example.com
 
 # Construire et lancer les conteneurs
 docker compose up --build -d
 ```
 
-Le service sera accessible sur `http://localhost:5000`.
+Le service sera accessible sur `http://localhost:9001`.
 
 ## 📋 Fonctionnalités
 

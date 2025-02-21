@@ -5,6 +5,6 @@ services:
     ports:
       - "9001:9001"
     environment:
-      - TARGET_DOMAIN=YOURDOMAIN.com  # Replace your target domain
+      - TARGET_DOMAIN=example.com  # Replace your target domain
     restart: unless-stopped
 
