@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Scan Results</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #00ff00;
+            font-family: monospace;
+        }
+        .terminal {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #00ff00;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #00ff00;
+        }
+        h1, h2 {
+            color: #00ff00;
+            text-shadow: 0px 0px 5px #00ff00;
+        }
+    </style>
+</head>
+<body class="p-8 flex flex-col items-center">
+    <h1 class="text-3xl font-bold mb-4">Security Scan Results</h1>
+    
+    <div class="terminal w-full max-w-4xl mb-4">
+        <h2 class="text-xl font-semibold">Nmap Scan</h2>
+        <pre class="text-sm text-green-400">{{ results['nmap'] }}</pre>
+    </div>
+    
+    <div class="terminal w-full max-w-4xl mb-4">
+        <h2 class="text-xl font-semibold">Gobuster Scan</h2>
+        <pre class="text-sm text-green-400">{{ results['gobuster'] }}</pre>
+    </div>
+    
+    <div class="terminal w-full max-w-4xl mb-4">
+        <h2 class="text-xl font-semibold">cURL Headers</h2>
+        <pre class="text-sm text-green-400">{{ results['curl'] }}</pre>
+    </div>
+    
+    <div class="terminal w-full max-w-4xl mb-4">
+        <h2 class="text-xl font-semibold">Automated Test Results</h2>
+        <pre class="text-sm text-green-400">{{ results['tests'] }}</pre>
+    </div>
+</body>
+</html>
+

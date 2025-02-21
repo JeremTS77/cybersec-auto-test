@@ -1,0 +1,5 @@
+# Liste des dépendances Python
+requests
+flask
+gunicorn
+python-nmap

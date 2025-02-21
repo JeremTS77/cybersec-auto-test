@@ -1,0 +1,25 @@
+body {
+    background-color: #121212;
+    color: #33ff33;
+    font-family: "Courier New", monospace;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff3333;
+}
+
+h2 {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+pre {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    overflow-x: auto;
+}
+
